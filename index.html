@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Site de Namoro</title>
+    <title>Meu Site de Flores</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Bem-vindo ao Site de Namoro</h1>
-    <div id="login-container">
-        <h2>Faça Login</h2>
-        <form action="processar_login.php" method="post">
-            <label for="username">Nome de Usuário:</label>
-            <input type="text" id="username" name="username" required>
+    <header>
+        <h1>Bem-vindo ao Meu Site de Flores</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+    <main>
+        <section id="destaque">
+            <h2>Destaque da Semana</h2>
+            <article class="destaque-flor">
+                <img src="rosa.jpg" alt="Rosa">
+                <h3>Rosa</h3>
+                <p>Uma das flores mais populares e simbólicas do mundo. Simboliza amor e beleza.</p>
+            </article>
+        </section>
 
-            <input type="submit" value="Entrar">
-        </form>
-        <p>Ainda não tem uma conta? <a href="registro.html">Registre-se</a></p>
-    </div>
+        <section id="catalogo">
+            <h2>Conheça Nosso Catálogo</h2>
+            <ul class="lista-flores">
+                <li>
+                    <img src="tulipa.jpg" alt="Tulipa">
+                    <h3>Tulipa</h3>
+                    <p>Uma flor elegante com uma variedade de cores deslumbrantes.</p>
+                </li>
+                <li>
+                    <img src="margarida.jpg" alt="Margarida">
+                    <h3>Margarida</h3>
+                    <p>Uma flor simples e encantadora que representa pureza e inocência.</p>
+                </li>
+                <li>
+                    <img src="girassol.jpg" alt="Girassol">
+                    <h3>Girassol</h3>
+                    <p>Uma flor alegre que simboliza felicidade e positividade.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Meu Site de Flores</p>
+    </footer>
 </body>
 </html>
+
+
